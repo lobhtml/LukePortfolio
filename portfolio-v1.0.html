@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke's Portfolio</title>
+    <link rel="icon" href="lobhtml-icon.png" type="image/png">
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 2.5%;
+            color: hsl(0, 0%, 0%);
+        }
+        h4 {
+            color: hsl(0, 0%, 70%);
+        }
+        .post {
+            margin: 20px 10%;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 15px; /* Curved border */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        }
+        .post a {
+            text-decoration: none;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Curved corners for the image */
+            transition: filter 0.3s; /* Smooth transition for darkening */
+        }
+        .post img:hover {
+            filter: brightness(80%); /* Darkens the image */
+        }
+        .post h2 {
+            color: #333;
+        }
+        .post p {
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 15px;
+            background-color: hsl(215, 100%, 55%); /* Button color */
+            color: white; /* Text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 20px; /* Curved corners */
+            font-size: 14px; /* Font size */
+        }
+        .button:hover {
+            background-color: hsl(215, 100%, 58%); /* Darker blue on hover */
+        }
+        .button-alt {
+            display: inline-block;
+            text-align: center;
+            margin-top: 0px;
+            padding: 12px 15px;
+            background-color: transparent; /* Transparent background */
+            color: hsl(215, 100%, 55%); /* Blue text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 20px; /* Curved corners */
+            font-size: 14px; /* Font size */
+            position: relative; /* Required for the pseudo-element */
+        }
+        .button-alt::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1.5px solid hsl(215, 100%, 55%); /* Blue border */
+            border-radius: 20px; /* Match the button's corners */
+            z-index: -1; /* Place behind the button */
+        }
+        .button-alt:hover {
+            background-color: hsl(215, 100%, 58%); /* Same blue on hover */
+            color: white; /* Change text color to white on hover */
+        }
+        .button-container {
+            text-align: center; /* Center the inline-block button */
+        }
+        body {
+            margin: 0; /* Remove default margin */
+        }
+        .static-image {
+            position: fixed; /* Fixes the position of the image */
+            top: 0; /* Aligns the image to the top */
+            left: 0; /* Aligns the image to the left */
+            margin-left: 10px;
+            z-index: 1000; /* Ensures the image is above other content */
+        }
+        .static-image img {
+            width: 100px; /* Adjust the size as needed */
+            height: auto; /* Maintains the aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="static-image">
+        <img src="lobhtml.png" alt="Static Image">
+    </div>
+    
+    <h1>Luke's Portfolio</h1>
+    <h4 style="margin: -15px 0 15px 0; text-align: center;">Web developer and UI/UX designer from Ireland.</h4>
+
+    <div class="button-container">
+        <a href="https://github.com/lobhtml" class="button">GitHub profile</a> <!-- Link Button -->
+        <a href="https://github.com/lobhtml" class="button-alt">Contact me</a> <!-- Alternate Button -->
+    </div>
+    
+    <div class="post">
+        <a href="post1.html" title="Exploring the Great Outdoors">
+            <img src="sample-1.png" alt="Exploring the Great Outdoors">
+        </a>
+        <h4 style="margin-bottom: -10px;">Published on 25 October 2024</h4>
+        <h2><a href="post1.html" style="color: #333;">Exploring the Great Outdoors</a></h2>        
+        <p style="margin-top: -10px;">
+            Join me as I share my adventures in nature, from hiking trails to hidden gems in the wilderness. Discover tips for enjoying the outdoors and the beauty of our planet!
+        </p>
+        <a href="post1.html" class="button">Watch Video</a> <!-- Link Button -->
+    </div>
+
+    <div class="post">
+        <a href="post1.html" title="Exploring the Great Outdoors">
+            <img src="sample-1.png" alt="Exploring the Great Outdoors">
+        </a>
+        <h4 style="margin-bottom: -10px;">Published on 25 October 2024</h4>
+        <h2><a href="post1.html" style="color: #333;">Exploring the Great Outdoors</a></h2>        
+        <p style="margin-top: -10px;">
+            Join me as I share my adventures in nature, from hiking trails to hidden gems in the wilderness. Discover tips for enjoying the outdoors and the beauty of our planet!
+        </p>
+        <a href="post1.html" class="button">Watch Video</a> <!-- Link Button -->
+    </div>
+    
+    <div class="post">
+        <a href="post1.html" title="Exploring the Great Outdoors">
+            <img src="sample-1.png" alt="Exploring the Great Outdoors">
+        </a>
+        <h4 style="margin-bottom: -10px;">Published on 25 October 2024</h4>
+        <h2><a href="post1.html" style="color: #333;">Exploring the Great Outdoors</a></h2>        
+        <p style="margin-top: -10px;">
+            Join me as I share my adventures in nature, from hiking trails to hidden gems in the wilderness. Discover tips for enjoying the outdoors and the beauty of our planet!
+        </p>
+        <a href="post1.html" class="button">Watch Video</a> <!-- Link Button -->
+    </div>
+
+    <footer style="text-align: center; margin: 25px 0; color: hsl(0, 0%, 70%);">
+        <p>&copy; <span id="current-year"></span> Luke's Portfolio Beta. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
