@@ -15,3 +15,4 @@
 ## v1.2 - 29-10-2024
 - Dot navigator update (clicking now prompts return to top of web page)
 - Verified-style badge added to site header
+- Margins adjusted for less cluttered mobile presentation (needs more work)
