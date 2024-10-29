@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke's Portfolio</title>
+    <link rel="icon" href="lobhtml-icon.png" type="image/png">
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 2.5%;
+            color: #333;
+        }
+        h4 {
+            color: hsl(0, 0%, 70%);
+        }
+        .post-container {
+            margin: 20px 20%;
+        }
+        .post {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .post h2 {
+            color: #333;
+        }
+        .post p {
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 15px;
+            background-color: hsl(215, 100%, 55%);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: hsl(215, 100%, 58%);
+        }
+        .button-alt {
+            display: inline-block;
+            text-align: center;
+            margin-top: 0px;
+            padding: 12px 15px;
+            background-color: transparent;
+            color: hsl(215, 100%, 55%);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            position: relative;
+        }
+        .button-alt::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1.5px solid #1a79ff;
+            border-radius: 20px;
+            z-index: -1;
+        }
+        .button-alt:hover {
+            background-color: hsl(215, 100%, 58%);
+            color: white;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .static-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-left: 10px;
+            z-index: 1000;
+        }
+        .static-image img {
+            width: 100px;
+            height: auto;
+        }
+        .dot-navigator {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: hsl(0, 0%, 70%);
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="static-image">
+        <img src="lobhtml.png" alt="Static Image">
+    </div>
+    
+    <h1>
+        Luke O'Brien 
+        <img src="verified.png" alt="Verified" style="width: 20px; height: 20px; 
+        vertical-align: middle; margin-bottom: 5px; margin-left: -1px;">
+    </h1>
+    
+    <h4 style="margin: -15px 0 15px 0; text-align: center;">Web developer and UI/UX designer from Ireland.</h4>
+
+    <div class="button-container">
+        <a href="https://www.linkedin.com/in/lob42195/" class="button">Linkedin profile</a>
+        <a href="https://github.com/lobhtml" class="button-alt">GitHub profile</a>
+    </div>
+
+    <div class="post-container" id="post-group-2">
+        <div class="post">
+            <img src="post-img/post-6.png" alt="Update - XPnote v1.4">
+            <h4 style="margin-bottom: -10px;">Published on 29 October 2024</h4>
+            <h2>
+                <span class="label" style="background-color: hsl(108, 100%, 50%); color: #000;
+                padding: 2px 5px; border-radius: 5px; margin-right: 8px;">
+                Demo</span>Retro Terminal Emulator - Raspberry Pi OS Install Guide  
+            </h2>
+            <p style="margin-top: -10px;">
+                I was doing some research for a CSS theme I'm planning to build that emulates the UI of a retro terminal 
+                and came across cool-retro-term on GitHub! It is a very cool retro terminal emulator 
+                and there are a bunch of theme built in, some that mimic Apple or DOS systems 
+                and others that are reminiscent of terminal interfaces from the Fallout games. In this video, 
+                I guide you through how to install cool-retro-term on Raspberry Pi OS using the command terminal.
+            </p>
+            <a href="https://www.youtube.com/watch?v=zzhuQvmMzHM" class="button">Watch video</a>
+        </div>
+        
+        <div class="post">
+            <img src="post-img/post-5.png" alt="Update - XPnote v1.4">
+            <h4 style="margin-bottom: -10px;">Published on 29 October 2024</h4>
+            <h2>
+                <span class="label" style="background-color: hsl(168, 100%, 50%); color: #000; 
+                padding: 2px 5px; border-radius: 5px; margin-right: 8px;">
+                Update</span>XPnote [v1.4] CSS Update - Windows XP Font, UI/UX Design Overhaul 
+            </h2>
+            <p style="margin-top: -10px;">
+                XPnote.com is a functional, static web application (notepad) built using HTML, CSS and JavaScript. 
+                The purpose of this project is to learn more about coding and front-end development in practice. 
+                The UI/UX design is inspired by classic operating systems like Windows XP and Windows 95/98.
+            </p>
+            <a href="https://www.youtube.com/watch?v=waIba53xNzk" class="button">Watch video</a>
+        </div>
+
+        <div class="post">
+            <img src="post-img/post-4.png" alt="XPnote [v1.1] Classic Notepad - Built Using HTML, CSS & JavaScript">
+            <h4 style="margin-bottom: -10px;">Published on 29 October 2024</h4>
+            <h2>
+                <span class="label" style="background-color: hsl(168, 100%, 50%); color: #000; 
+                padding: 2px 5px; border-radius: 5px; margin-right: 8px;">
+                Update</span>XPnote [v1.1] Classic Notepad - Built Using HTML, CSS & JavaScript 
+            </h2>
+            <p style="margin-top: -10px;">
+                XPnote.com is a functional, static web application (notepad) built using HTML, CSS and JavaScript. 
+                The purpose of this project is to learn more about coding and front-end development in practice. 
+                The UI/UX design is inspired by classic operating systems like Windows XP and Windows 95/98.
+            </p>
+            <a href="https://www.youtube.com/watch?v=Ni9HJjzLtBM" class="button">Watch video</a>
+        </div>
+    </div>
+
+    <div class="post-container" id="post-group-1" style="display: none;">
+        <div class="post">
+            <img src="post-img/post-3.png" alt="XPnote.com | Classic Web Application">
+            <h4 style="margin-bottom: -10px;">Published on 29 October 2024</h4>
+            <h2>
+                <span class="label" style="background-color: #ffcc00; color: #000; 
+                padding: 2px 5px; border-radius: 5px; margin-right: 8px;">
+                Project</span>XPnote.com | Classic Web Application
+            </h2>
+            <p style="margin-top: -10px;">
+                XPnote.com is a functional, static web application (notepad) built using HTML, CSS and JavaScript. 
+                The purpose of this project is to learn more about coding and front-end development in practice. 
+                The UI/UX design is inspired by classic operating systems like Windows XP and Windows 95/98. 
+            </p>
+            <a href="https://xpnote.com/" class="button">Explore site</a>
+        </div>
+
+        <div class="post">
+            <img src="post-img/post-2.png" alt="GameBoy Advance Emulator - Raspberry Pi OS Install Guide">
+            <h4 style="margin-bottom: -10px;">Published on 29 October 2024</h4>
+            <h2>
+                <span class="label" style="background-color: hsl(108, 100%, 50%); color: #000; 
+                padding: 2px 5px; border-radius: 5px; margin-right: 8px;">
+                Demo</span>GameBoy Advance Emulator - Raspberry Pi OS Install Guide
+            </h2>
+            <p style="margin-top: -10px;">
+                I'm a total beginner when it comes to Linux-based operating systems such as Raspberry Pi OS. 
+                This tutorial was a cool way for me to approach problem solving in this new environment, 
+                and it also helped me learn more about using the command line interface (CLI).
+            </p>
+            <a href="https://www.youtube.com/watch?v=o_KE594W3Js" class="button">Watch video</a>
+        </div>
+
+        <div class="post">
+            <img src="post-img/post-1.png" alt="KolibriOS Tiny 1.44MB Operating System - VirtualBox Windows 11">
+            <h4 style="margin-bottom: -10px;">Published on 29 October 2024</h4>
+            <h2>
+                <span class="label" style="background-color: hsl(108, 100%, 50%); color: #000; 
+                padding: 2px 5px; border-radius: 5px; margin-right: 8px;">
+                Demo</span>KolibriOS Tiny 1.44MB Operating System - VirtualBox Windows 11
+            </h2>
+            <p style="margin-top: -10px;">
+                My interest in DOS games from the 90's has prompted me to learn more about classic or niche operating systems. 
+                I stumbled across KolibriOS, a "tiny and fast operating system", and wanted to demo this streamlined OS. 
+                I used VirtualBox to mount the ISO in Windows 11, to run both simultaneously.
+            </p>
+            <a href="https://www.youtube.com/watch?v=doVhzdYeCWE" class="button">Watch video</a>
+        </div>
+    </div>
+
+    <div class="dot-navigator">
+        <span class="dot active" data-group="2"></span>
+        <span class="dot" data-group="1"></span>
+    </div>
+
+    <footer style="text-align: center; margin: 25px 0; color: hsl(0, 0%, 70%);">
+        <p>&copy; <span id="current-year"></span> Luke's Portfolio v1.2. All rights reserved.</p>
+    </footer>
+
+    <script>
+const dots = document.querySelectorAll('.dot');
+const postGroups = document.querySelectorAll('.post-container');
+
+dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        const groupId = dot.getAttribute('data-group');
+
+        // Hide all post groups
+        postGroups.forEach(group => {
+            group.style.display = 'none';
+        });
+
+        // Show the selected post group
+        document.getElementById(`post-group-${groupId}`).style.display = 'block';
+
+        // Scroll to the top of the page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // Update active dot
+        dots.forEach(d => d.classList.remove('active'));
+        dot.classList.add('active');
+    });
+});
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
