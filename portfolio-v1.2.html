@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke O'Brien | Web Developer and UIUX Designer</title>
+    <link rel="icon" href="lobhtml-icon.png" type="image/png">
+    <style>
+        body {
+            background-color: hsl(0, 0%, 97%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 2.5%;
+            color: #333;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        h4 {
+            color: hsl(0, 0%, 50%);
+            margin-bottom: -10px;
+            margin-left: 25px;
+        }
+        .post-container {
+            display: grid;                    /* Using CSS Grid */
+            grid-template-columns: repeat(2, 1fr); /* Two equal-width columns on larger screens */
+            gap: 30px;                        /* Space between posts */
+            margin: 30px 15%;
+        }
+        .post-container-2 {
+            display: grid;                    /* Using CSS Grid */
+            grid-template-columns: repeat(1, 1fr); /* Two equal-width columns on larger screens */
+            gap: 30px;                        /* Space between posts */
+            margin: 30px 15%;
+        }
+        @media (max-width: 768px) {
+        .post-container {
+        grid-template-columns: 1fr;   /* Switch to 1 column on mobile (width <= 768px) */
+        }
+        }
+        .post {
+            background-color: hsl(0, 0%, 100%);
+            padding: 0px;
+            border-radius: 25px;
+            min-height: 450px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 25px 25px 0 0; /* Only round the top corners */
+        }
+        .post h2 {
+            color: #333333;
+            margin-bottom: -10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 5px;
+        }
+        .post-2 h2 {
+            color: #333333;
+            margin-bottom: -10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 5px;
+        }
+        .post p {
+            color: #666;
+            max-width: 100%;
+        }
+        .post-2 {
+            background-color: hsl(0, 0%, 100%);
+            padding: 0px;
+            border-radius: 25px;
+            min-height: 700px;
+        }
+        .post-2 img {
+            max-width: 100%;                     /* Set the image width to 40% */
+            height: auto;
+            border-radius: 25px 25px 0 0px;       /* Round top-right and bottom-right corners */
+            margin-right: 20px;                 /* Space between the image and the text */
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 15px;
+            background-color: hsl(0, 0%, 92%);
+            color: hsl(0, 0%, 10%);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: hsl(0, 0%, 87%);
+        }
+        .button-alt {
+            display: inline-block;
+            text-align: center;
+            margin-top: 0px;
+            padding: 12px 15px;
+            background-color: transparent;
+            color: hsl(0, 0%, 10%);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            position: relative;
+        }
+        .button-alt::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1.5px solid hsl(0, 0%, 10%);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        .button-alt:hover {
+            background-color: hsl(0, 0%, 10%);
+            color: hsl(0, 0%, 87%);
+        }
+        .button-container {
+            text-align: center;
+        }
+        .static-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-left: 10px;
+            z-index: 1000;
+        }
+        .static-image img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="static-image">
+        <img src="lobhtml.png" alt="Static Image">
+    </div>
+    
+    <h1>Luke's Portfolio</h1>
+    <h4 style="margin: -10px 0 15px 0; text-align: center;">
+    Web developer and UI/UX designer from Ireland.</h4>
+
+    <div class="button-container">
+        <a href="https://github.com/lobhtml" class="button">GitHub profile</a>
+        <a href="contact.html" class="button">Contact</a>
+    </div>
+
+    <div class="post-container-2">
+        <a href="https://www.youtube.com/@LukePlayzIE" style="display: block; text-decoration: none; color: inherit;">
+            <div class="post-2">
+                <img src="demo-post.png" alt="Update - XPnote v1.4">
+                <h4><span style="width: 8px; height: 8px; background-color: hsl(170, 50%, 50%); 
+                    border-radius: 50%; display: inline-block; 
+                    margin-bottom: 1px; margin-right: 5px;">
+                    </span>Update</h4>
+                <h2>Check Out My New Post Content - Placeholder</h2>
+                <h4 style="margin-bottom: -10px; margin-left: 25px">29 October 2024</h4>
+            </div>
+        </a>
+    </div>
+    
+    <div class="post-container">
+        <a href="https://www.youtube.com/@LukePlayzIE" style="display: block; text-decoration: none; color: inherit;">
+            <div class="post">
+                <img src="demo-post.png" alt="Update - XPnote v1.4">
+                <h4><span style="width: 8px; height: 8px; background-color: hsl(170, 50%, 50%); 
+                    border-radius: 50%; display: inline-block; 
+                    margin-bottom: 1px; margin-right: 5px;">
+                    </span>Update</h4>
+                <h2>Check Out My New Post Content - Placeholder</h2>
+                <h4 style="margin-bottom: -10px; margin-left: 25px">29 October 2024</h4>
+            </div>
+        </a>
+    
+        <a href="https://www.youtube.com/@LukePlayzIE" style="display: block; text-decoration: none; color: inherit;">
+            <div class="post">
+                <img src="demo-post.png" alt="Update - XPnote v1.4">
+                <h4><span style="width: 8px; height: 8px; background-color: hsl(50, 50%, 50%); 
+                    border-radius: 50%; display: inline-block; 
+                    margin-bottom: 1px; margin-right: 5px;">
+                    </span>Demo/Tutorial</h4>
+                <h2>Check Out My New Post Content - Placeholder</h2>
+                <h4 style="margin-bottom: -10px; margin-left: 25px">29 October 2024</h4>
+            </div>
+        </a>
+    
+        <a href="https://www.youtube.com/@LukePlayzIE" style="display: block; text-decoration: none; color: inherit;">
+            <div class="post">
+                <img src="demo-post.png" alt="Update - XPnote v1.4">
+                <h4><span style="width: 8px; height: 8px; background-color: hsl(120, 46%, 53%); 
+                    border-radius: 50%; display: inline-block; 
+                    margin-bottom: 1px; margin-right: 5px;">
+                    </span>Demo/Tutorial</h4>
+                <h2>Check Out My New Post Content - Placeholder</h2>
+                <h4 style="margin-bottom: -10px; margin-left: 25px">29 October 2024</h4>
+            </div>
+        </a>
+    
+        <a href="https://www.youtube.com/@LukePlayzIE" style="display: block; text-decoration: none; color: inherit;">
+            <div class="post">
+                <img src="demo-post.png" alt="Update - XPnote v1.4">
+                <h4><span style="width: 8px; height: 8px; background-color: #4ebe4e; 
+                    border-radius: 50%; display: inline-block; 
+                    margin-bottom: 1px; margin-right: 5px;">
+                    </span>Demo/Tutorial</h4>
+                <h2>Check Out My New Post Content - Placeholder</h2>
+                <h4 style="margin-bottom: -10px; margin-left: 25px">29 October 2024</h4>
+            </div>
+        </a>
+    </div>
+
+    <footer style="text-align: center; margin: 35px 0; color: hsl(0, 0%, 70%);">
+        <p>&copy; <span id="current-year"></span> Luke's Portfolio v1.2. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>

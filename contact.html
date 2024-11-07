@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke O'Brien | Web Developer and UIUX Designer</title>
+    <link rel="icon" href="lobhtml-icon.png" type="image/png">
+    <style>
+        body {
+            background-color: hsl(0, 0%, 97%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 2.5%;
+            color: #333;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        h4 {
+            color: hsl(0, 0%, 50%);
+            margin-bottom: -10px;
+            margin-left: 25px;
+        }
+        .post-container {
+            margin: 30px 15%;
+        }
+        .post {
+            background-color: hsl(0, 0%, 100%);
+            padding: 20px;
+            border-radius: 25px;
+        }
+        .post h2 {
+            color: #333333;
+        }
+        .post p {
+            color: #666;
+            max-width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 15px;
+            background-color: hsl(0, 0%, 92%);
+            color: hsl(0, 0%, 10%);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: hsl(0, 0%, 87%);
+        }
+        .button-alt {
+            display: inline-block;
+            text-align: center;
+            margin-top: 0px;
+            padding: 12px 15px;
+            background-color: transparent;
+            color: hsl(215, 100%, 55%);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            position: relative;
+        }
+        .button-alt::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1.5px solid #1a79ff;
+            border-radius: 20px;
+            z-index: -1;
+        }
+        .button-alt:hover {
+            background-color: hsl(215, 100%, 58%);
+            color: white;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .static-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-left: 10px;
+            z-index: 1000;
+        }
+        .static-image img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Form container styling (inside the post) */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        /* Form input fields */
+        input[type="email"],
+        textarea {
+            font-family: Arial, sans-serif; /* Matches the site's font */
+            font-size: 16px;
+            padding: 12px;
+            border: 0px solid #ccc;
+            border-radius: 15px;
+            margin-top: 8px;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: hsl(0, 0%, 97%);
+        }
+
+        /* Textarea specific styles */
+        textarea {
+            min-height: 150px;
+            resize: vertical; /* Allow resizing vertically */
+        }
+
+        /* Labels for form fields */
+        label h2 {
+            font-size: 18px;
+            color: hsl(0, 0%, 10%);
+            margin-bottom: 5px;
+        }
+
+        /* Submit button styling */
+        button[type="submit"] {
+            padding: 12px 15px;
+            background-color: hsl(0, 0%, 92%);
+            color: hsl(0, 0%, 10%);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        /* Hover effect for submit button */
+        button[type="submit"]:hover {
+            background-color: hsl(0, 0%, 87%);
+        }
+    </style>
+</head>
+<body>
+    <div class="static-image">
+        <img src="lobhtml.png" alt="Static Image">
+    </div>
+    <h1>Luke's Portfolio</h1>
+    
+    <h4 style="margin: -10px 0 15px 0; text-align: center;">Web developer and UI/UX designer from Ireland.</h4>
+
+    <div class="button-container">
+        <a href="https://github.com/lobhtml" class="button">GitHub profile</a>
+        <a href="portfolio-v1.2.html" class="button">Return</a>
+    </div>
+
+    <div class="post-container" id="post-group-2">
+        <div class="post">
+            <form action="https://formspree.io/f/mldebwjk" method="POST">
+                <label>
+                    <h2>Your email:</h2>
+                    <input type="email" name="email" required placeholder="Enter your email address">
+                </label>
+                <label>
+                    <h2>Your message:</h2>
+                    <textarea name="message" required placeholder="Write your message here"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin: 35px 0; color: hsl(0, 0%, 70%);">
+        <p>&copy; <span id="current-year"></span> Luke's Portfolio v1.2. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
